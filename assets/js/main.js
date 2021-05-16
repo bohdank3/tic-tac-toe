@@ -1,5 +1,5 @@
 const area  = document.getElementById('area');
-let move  = 0; //отвечает за ход четные и не четные крестики или нолики 
+let move  = 0; 
 let result ='';
 let contentWrapper= document.getElementById('content');
 let modalResult = document.getElementById('modal-result-wrapper');
@@ -31,7 +31,8 @@ const check = () =>{
 	}
 }
 const prepearResult = winner =>{
-	contentWrapper.innerHTML = `Победили ${winner} !`;
+		contentWrapper.innerHTML = `Победили ${winner} !`;
+	
 	modalResult.style.display = 'block';
 }
 
