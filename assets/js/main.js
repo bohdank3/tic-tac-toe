@@ -43,3 +43,9 @@ area.addEventListener('click', e =>{
 	}
 })
 
+const closeModal =() =>{
+	modalResult.style.display = 'none';
+	location.reload();
+}
+overlay.addEventListener('click',closeModal)
+btnClose.addEventListener('click',closeModal)
